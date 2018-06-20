@@ -51,5 +51,3 @@ sub module_boilerplate_ok {
 not_in_file_ok('Makefile.PL');
 not_in_file_ok('CHANGES');
 module_boilerplate_ok('lib/Email/SendGrid/V3.pm');
-
-
