@@ -89,7 +89,7 @@ Email is required, name is optional.
 ### $self->subject($subject);
 
 Sets the subject of the message.
-Required, but can be overriden at the message personalization level.
+Required, but can be overridden at the message personalization level.
 
 ### $self->reply\_to($email, $name);
 
@@ -132,7 +132,7 @@ Removes one substitution section defined in this message.
 
 ### $self->set\_section($key, $value);
 
-Sets one new substitution section for this message.  Each occurence of $key
+Sets one new substitution section for this message.  Each occurrence of $key
 in each body part will be replaced with $value prior to personalization
 substitutions (if any).
 
@@ -151,7 +151,7 @@ Clears all custom headers defined for this message.
 Sets all custom SMTP headers for this message at once. These must be properly encoded
 if they contain unicode characters. Must not be one of the reserved headers.
 
-These can be overriden at the message personalization level.
+These can be overridden at the message personalization level.
 
 ### $self->clear\_categories();
 
@@ -174,7 +174,7 @@ Clears out all custom arguments defined for this message.
 ### $self->set\_custom\_args(%args);
 
 Sets all custom arguments defined for this message.
-These can be overriden at the message personalization level.
+These can be overridden at the message personalization level.
 The total size of custom arguments cannot exceed 10,000 bytes.
 
 ### $self->send\_at($timestamp);
@@ -182,7 +182,7 @@ The total size of custom arguments cannot exceed 10,000 bytes.
 A unix timestamp (seconds since 1970) specifying when to deliver this message.
 Cannot be more than 72 hours in the future.
 
-This can be overriden at the message personalization level.
+This can be overridden at the message personalization level.
 
 ### $self->batch\_id($batch\_id);
 

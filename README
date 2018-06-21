@@ -98,7 +98,7 @@ INSTANCE METHODS
 
   $self->subject($subject);
 
-    Sets the subject of the message. Required, but can be overriden at the
+    Sets the subject of the message. Required, but can be overridden at the
     message personalization level.
 
   $self->reply_to($email, $name);
@@ -144,7 +144,7 @@ INSTANCE METHODS
 
   $self->set_section($key, $value);
 
-    Sets one new substitution section for this message. Each occurence of
+    Sets one new substitution section for this message. Each occurrence of
     $key in each body part will be replaced with $value prior to
     personalization substitutions (if any).
 
@@ -164,7 +164,7 @@ INSTANCE METHODS
     properly encoded if they contain unicode characters. Must not be one of
     the reserved headers.
 
-    These can be overriden at the message personalization level.
+    These can be overridden at the message personalization level.
 
   $self->clear_categories();
 
@@ -187,7 +187,7 @@ INSTANCE METHODS
   $self->set_custom_args(%args);
 
     Sets all custom arguments defined for this message. These can be
-    overriden at the message personalization level. The total size of
+    overridden at the message personalization level. The total size of
     custom arguments cannot exceed 10,000 bytes.
 
   $self->send_at($timestamp);
@@ -195,7 +195,7 @@ INSTANCE METHODS
     A unix timestamp (seconds since 1970) specifying when to deliver this
     message. Cannot be more than 72 hours in the future.
 
-    This can be overriden at the message personalization level.
+    This can be overridden at the message personalization level.
 
   $self->batch_id($batch_id);
 
