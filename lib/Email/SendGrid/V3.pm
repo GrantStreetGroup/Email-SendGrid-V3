@@ -279,7 +279,7 @@ sub from {
 =head3 $self->subject($subject);
 
 Sets the subject of the message.
-Required, but can be overriden at the message personalization level.
+Required, but can be overridden at the message personalization level.
 
 =cut
 
@@ -439,7 +439,7 @@ sub remove_section {
 
 =head3 $self->set_section($key, $value);
 
-Sets one new substitution section for this message.  Each occurence of $key
+Sets one new substitution section for this message.  Each occurrence of $key
 in each body part will be replaced with $value prior to personalization
 substitutions (if any).
 
@@ -492,7 +492,7 @@ sub clear_headers {
 Sets all custom SMTP headers for this message at once. These must be properly encoded
 if they contain unicode characters. Must not be one of the reserved headers.
 
-These can be overriden at the message personalization level.
+These can be overridden at the message personalization level.
 
 =cut
 
@@ -578,7 +578,7 @@ sub clear_custom_args {
 =head3 $self->set_custom_args(%args);
 
 Sets all custom arguments defined for this message.
-These can be overriden at the message personalization level.
+These can be overridden at the message personalization level.
 The total size of custom arguments cannot exceed 10,000 bytes.
 
 =cut
@@ -598,7 +598,7 @@ sub set_custom_args {
 A unix timestamp (seconds since 1970) specifying when to deliver this message.
 Cannot be more than 72 hours in the future.
 
-This can be overriden at the message personalization level.
+This can be overridden at the message personalization level.
 
 =cut
 
