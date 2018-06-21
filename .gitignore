@@ -24,3 +24,7 @@ local
 .perl-*.installed
 .perl-*.tested
 .perl-version
+cpanfile.snapshot
+local
+GSG-*-v*/
+GSG-*-v*.tar.*
