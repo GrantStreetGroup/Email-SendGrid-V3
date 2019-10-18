@@ -137,7 +137,7 @@ sub validate {
 
 sub _payload {
     my ($self) = @_;
-    return JSON->new->canonical->encode( $self->{data} );
+    return JSON->new->utf8->canonical->encode( $self->{data} );
 }
 
 =head2 Personalizations / Envelopes
