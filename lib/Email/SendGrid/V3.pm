@@ -1,7 +1,8 @@
 package Email::SendGrid::V3;
 
 our $AUTHORITY = 'cpan:GSG';
-our $VERSION   = '0.90';
+# ABSTRACT: Class for building a message to be sent through the SendGrid v3 Web API
+# VERSION
 
 use v5.10.1;
 use strict;
@@ -16,14 +17,6 @@ use constant DEFAULT_ENDPOINT => 'https://api.sendgrid.com/v3/mail/send';
 use namespace::clean;  # don't export the above
 
 =encoding utf8
-
-=head1 NAME
-
-Email::SendGrid::V3 - Class for building a message to be sent through the SendGrid v3 Web API
-
-=head1 VERSION
-
-version 0.90
 
 =head1 SYNOPSIS
 
@@ -868,21 +861,5 @@ sub spam_check {
 
     return $self;
 }
-
-=head1 AUTHOR
-
-Grant Street Group <developers@grantstreet.com>
-
-=head1 LICENSE AND COPYRIGHT
-
-Copyright 2018 Grant Street Group.
-
-This program is free software; you can redistribute it and/or modify it
-under the terms of the the Artistic License (2.0). You may obtain a
-copy of the full license at:
-
-L<http://www.perlfoundation.org/artistic_license_2_0>
-
-=cut
 
 1;

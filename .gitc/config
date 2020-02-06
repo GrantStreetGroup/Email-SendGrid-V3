@@ -1,9 +1,0 @@
-project_name: email-sendgrid-v3
-jira_project: [ SM ]
-open onto: master
-use_version_tags: 1
-autorelease_to_gsgpan: 1
-run_tests_on_submit: 1
-tests_to_run_on_submit:
-    - perl Makefile.PL
-    - make authorprove

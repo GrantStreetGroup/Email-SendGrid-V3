@@ -1,7 +1,16 @@
-use GSG::Gitc::CPANfile $_environment;
-
 requires 'JSON';
 requires 'namespace::clean';
-test_requires 'Test2::Bundle::More';
-test_requires 'Test2::Tools::Exception';
 
+on test => sub {
+    requires 'Test2::Bundle::More';
+    requires 'Test2::Tools::Exception';
+};
+
+on develop => sub {
+    requires 'Dist::Zilla::PluginBundle::Author::GSG';
+    requires 'Test2::Require::AuthorTesting';
+    requires 'Test::Pod';
+    requires 'Test::Pod::Coverage';
+    requires 'Test::Strict';
+    requires 'Test::Version';
+};

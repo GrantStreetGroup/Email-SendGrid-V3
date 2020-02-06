@@ -4,23 +4,21 @@ Email::SendGrid::V3 - Class for building a message to be sent through the SendGr
 
 # VERSION
 
-version 0.90
+version v0.0.1
 
 # SYNOPSIS
 
-```perl
-use Email::SendGrid::V3;
+    use Email::SendGrid::V3;
 
-my $sg = Email::SendGrid::V3->new(api_key => 'XYZ123');
+    my $sg = Email::SendGrid::V3->new(api_key => 'XYZ123');
 
-my $result = $sg->from('nobody@example.com')
-                ->subject('A test message for you')
-                ->add_content('text/plain', 'This is a test message sent with SendGrid')
-                ->add_envelope( to => [ 'nobody@example.com' ] )
-                ->send;
+    my $result = $sg->from('nobody@example.com')
+                    ->subject('A test message for you')
+                    ->add_content('text/plain', 'This is a test message sent with SendGrid')
+                    ->add_envelope( to => [ 'nobody@example.com' ] )
+                    ->send;
 
-print $result->{success} ? "It worked" : "It failed: " . $result->{reason};
-```
+    print $result->{success} ? "It worked" : "It failed: " . $result->{reason};
 
 # DESCRIPTION
 
@@ -267,14 +265,12 @@ the account-level settings if any.
 
 # AUTHOR
 
-Grant Street Group &lt;developers@grantstreet.com>
+Grant Street Group <developers@grantstreet.com>
 
-# LICENSE AND COPYRIGHT
+# COPYRIGHT AND LICENSE
 
-Copyright 2018 Grant Street Group.
+This software is Copyright (c) 2018 - 2020 by Grant Street Group.
 
-This program is free software; you can redistribute it and/or modify it
-under the terms of the the Artistic License (2.0). You may obtain a
-copy of the full license at:
+This is free software, licensed under:
 
-[http://www.perlfoundation.org/artistic\_license\_2\_0](http://www.perlfoundation.org/artistic_license_2_0)
+    The Artistic License 2.0 (GPL Compatible)
