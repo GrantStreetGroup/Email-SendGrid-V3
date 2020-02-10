@@ -4,7 +4,7 @@ Email::SendGrid::V3 - Class for building a message to be sent through the SendGr
 
 # VERSION
 
-version v0.0.1
+version v0.90.1
 
 # SYNOPSIS
 
